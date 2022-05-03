@@ -1,0 +1,129 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+ 
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-image: url(background-adare-restaurant.jpg) ;
+
+    /* height: 100vh; */
+}
+
+h6{
+    display: flex; 
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    color: rgb(245, 193, 124);
+}
+h3{
+    font-style: italic;
+}
+
+
+.container{
+    /* make the container position relative so the content will be absolute */
+    position: relative;
+    /* hide the rest of the images */
+    left: 40px;
+    width: 90vw;
+    height: 100vh; 
+}
+
+.left-part{
+    /* take the whole height of the container and 35 of it's width */
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    /* stick it to the edges */
+    top: 0;
+    left: 0;
+}
+
+.left-part > div {
+    /* the left side will take the entire height  of the container */
+    height: 40%;
+    /* 100% of it's container which is 35% so it will take the whole 35 of container width*/
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.left-part h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px; 
+}
+
+.right-part{
+    height: 100%;
+    position: absolute; 
+    right: 0;
+    top: 0;
+    /* bcuz the width of the left part ends with 35 we make the right part start from 35 */
+    left: 60%;
+    /* the rest of the whole width will be for the right part */
+    width: 40%;
+}
+
+.right-part > div { /*select all images */
+    background-repeat: no-repeat;
+    /* show the whole image */
+    background-size: cover;
+    /* center it to the x and y axis */
+    background-position: center center;
+    /* make the image take the whole size of it's asigned height and width */
+    height: 40%;
+    width: 100%;
+
+}
+
+.buttons > input[type=button]{
+    /* width: 25px;
+    height: 25px; */
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+    border-color:  rgb(114, 110, 110);
+    
+    background-color: rgba(22, 20, 20, 0.918);
+    /* font-size: 19px; */
+    color: rgb(230, 219, 219);
+}
+
+/* input [type=button]  :hover{
+    color: red;
+} */
+
+
+
+
+#button{
+    position: relative;
+    top: 130px;
+    left: -310px;
+    border: none;
+    
+    border-radius: 40px;
+    background-color: rgb(109, 3, 3);
+    height: 30px;
+    width: 110px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+   
+}
+#button :hover{
+    color: rgb(179, 132, 4);
+}
+.right-part button a{
+    text-decoration: none;
+    color: antiquewhite;
+}
